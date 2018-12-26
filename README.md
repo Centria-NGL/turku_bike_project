@@ -12,7 +12,7 @@ The API provides an array of all stations, including information like, location,
 
 The service is coded so, to refresh every hour, and update the corresponding table on the MSSQL Server.
 
-### *station_stat_service*:
+### *station_stat_service.py*:
 
 This script runs as a Windows Service to capture data from the Next-Bike station status API.
 
@@ -20,7 +20,7 @@ The API provides an array of all station's status information, including current
 
 The service is coded so, to refresh every 50 seconds, and append the current reading to the respective table on the MSSQL Server.
 
-### *current_weather_service*:
+### *current_weather_service.py*:
 
 This script runs as a Windows Service to capture weather data using API calls to the DarkSky weather provider.
 
