@@ -1,6 +1,6 @@
 # Turku Bike Project
 
-This repo contains the python installable scripts used for data-capture and push to a MSSQL Remote Server Database.
+This repo contains the python installable scripts used for data-capture and push to a MSSQL On-Premise Server Database.
 
 These scripts are installable in the Windows operating system as Windows Services.
 
@@ -10,7 +10,7 @@ This script runs as a Windows Service to capture data from the Next-Bike station
 
 The API provides an array of all stations, including information like, location, capacity, identifier, etc. The reply is in JSON format, therefore, the script manages this reply, and formats the SQL query to include the data provided by the API itself.
 
-The service is coded so, to refresh every hour, and update the corresponding table on the remote MSSQL Server.
+The service is coded so, to refresh every hour, and update the corresponding table on the MSSQL Server.
 
 ### *station_stat_service*:
 
